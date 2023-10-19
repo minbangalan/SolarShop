@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eagles Solar Light | Contact Us</title>
+
+    <link rel="icon" href="281544150_147679217823086_696519363242538715_n-removebg-preview.png"/>
+
+<!-- BOOTSTRAP -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<!--SWIPER-->    
+    <link rel="stylesheet" href="https://unpkg.com/swiper@10.3.1/swiper-bundle.min.css">
+<!--FONT AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<style>
+    body, html {
+        overflow-x: hidden;
+    }
+    body{
+        margin: 0;
+        background: linear-gradient(rgba(235, 235, 235, 0.678), rgba(44, 42, 42, 0.555)), url(page2.jpg) no-repeat center / cover;
+        background-attachment: fixed;
+    }
+    .navbar {
+        height: 90px;
+        width: 100%;
+        position: fixed;
+        overflow: hidden;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.555);
+        z-index: 2;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 10px;
+    }
+    .nav-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav-link{
+        font-size: 35px;
+        font-weight: 600;
+        color: #000000;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .nav-link:hover{
+        color: #383737ef;
+    }
+
+    .navbar a img {
+        height: 75px;
+        width: 75px;
+        margin-left: 50px;
+    }
+    .header{
+        border-bottom: 1px solid #E2E8F0;
+    }
+    .navbar li {
+        list-style: none;
+    }
+    .hamburger {
+        display: none;
+        margin-right: 0;
+    }
+    .bar {
+        display: flex;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        background-color: #101010;
+    }
+    .navbar-scrolled {
+        position: fixed;
+        background-color: rgba(41, 41, 41, 0.747);
+        box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+    }
+    @media only screen and (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 0.562);
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+    }
+
+/*--------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------*/
+
+.grid .featured-image img {
+    width: 370px;
+    height: 300px;
+    margin-top: 130px;
+}
+
+.grid p {
+    font-size: x-large;
+    font-weight: 600;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+.grid h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: xx-large;
+    color: rgb(0, 0, 0);
+}
+.grid img {
+    width: 100px;
+    height: 100px;
+}
+.grid .form-label {
+    font-size: x-large;
+    color: rgb(0, 0, 0);
+    font-weight: 550;
+}
+.grid .form-control { 
+    width: 300px;
+    margin-left: 100px;  
+}
+.grid #mySelect {
+    width: 370px;
+    margin-left: 100px;
+    margin-top: 30px;
+}
+.grid #localaddress {
+    width: 400px;
+    margin-left: 100px;
+}
+.grid #formselect2 {
+    width: 300px;
+    margin-left: 100px;
+}
+.grid #formFileMultiple {
+    margin-left: 100px;
+    width: 300px;  
+}
+.text-center .container-fluid .mt-3 a {
+    width: 120px;
+    text-align: center;
+}
+#subdropdown2 {
+    margin-left: 0;
+}
+.form-label {
+    margin-left: 110px;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+/*------------ Custom Placeholder ------------*/
+::placeholder{
+    font-size: 16px;
+}
+/*------------ For small screens------------*/
+@media only screen and (max-width: 768px){
+     .box-area{
+        margin: 0 10px;
+     }
+     .left-box{
+        height: 100px;
+        overflow: hidden;
+     }
+     .right-box{
+        padding: 20px;
+     }
+}
+
+.center-form {
+    justify-content: center;
+    display: flex;
+    margin-top: 50px;
+    margin-left: 1100px;
+    width: 1000px;
+    border: 3px solid rgb(0, 0, 0);
+    padding: 30px;
+    background-color: #daad1cd5;
+}
+/*---------------------------FOOTER SECTION-------------------------------------*/
+/*---------------------------FOOTER SECTION-------------------------------------*/
+/*---------------------------FOOTER SECTION-------------------------------------*/
+
+#FooterLogo img {
+        width: 100px;
+        height: 100px;
+    }
+/*--------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------*/
+
+@media (max-width: 1280px) {
+    .center-form {
+        margin-left: 140px;
+        width: 1000px;
+        justify-content: center;
+       
+    }
+
+}
+@media (max-width: 1024px) {
+    .center-form {
+        margin-left: 120px;
+        width: 800px;
+        justify-content: center;
+       
+    }
+
+}
+@media (max-width: 912px) {
+    .center-form {
+        margin-left: 56px;
+        width: 800px;
+        justify-content: center;
+       
+    }
+
+}
+@media (max-width: 820px) {
+    .center-form {
+        margin-left: 60px;
+        width: 700px;
+        justify-content: center;
+       
+    }
+
+}
+
+@media (max-width: 768px) {
+    .center-form {
+        margin-left: 34px;
+        width: 700px;
+        justify-content: center;
+       
+    }
+
+}
+@media (max-width: 540px) {
+    .center-form {
+        margin-left: 45px;
+        width: 450px;
+        justify-content: center;
+       
+    }
+
+}
+
+@media (max-width: 414px) {
+    .center-form {
+        margin-left: 17px;
+        width: 380px;
+        justify-content: center;
+       
+    }
+
+}
+@media (max-width: 393px) {
+    .center-form {
+        margin-left: 22px;
+        width: 350px;
+        justify-content: center;
+       
+    }
+}
+
+@media (max-width: 375px) {
+    .center-form {
+        margin-left: 22px;
+        width: 335px;
+        justify-content: center;
+       
+    }
+}
+@media (max-width: 360px) {
+    .center-form {
+        margin-left: 20px;
+        width: 320px;
+        justify-content: center;
+       
+    }
+}
+
+
+@media (max-width:375px) {
+    .navbar a img {
+        height: 75px;
+        width: 75px;
+        margin-left: 20px;
+    }
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+    .hamburger {
+        display: block;
+        cursor: pointer;
+         width: 100px;
+    }
+    .nav-link {
+        color: #ffffff;
+        font-size: large;
+    }
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: rgba(41, 41, 41, 0.747);
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+    
+}
+
+
+
+
+</style>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="nav-logo"><img src="281544150_147679217823086_696519363242538715_n-removebg-preview.png" alt=""></a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="PlanB_ContactUs.html" class="nav-link">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="PlanB_ShopPage.html" class="nav-link">Order Now</a>
+                </li>
+            </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+</header>
+
+<div class="grid">
+    <div class="col">
+        <center><div class="featured-image">
+            <img src="sign1.jpg" class="img-fluid">
+        </div> <br>
+        <h1>Let us know how we can help!</h1>
+<br>
+        <p>Congratulations! You are now one step closer with solar powered-life <br> which is good for our planet, our health, and the economy!<p>
+        <img src="281544150_147679217823086_696519363242538715_n-removebg-preview.png" alt="">
+    </div>
+</center>
+</div>
+
+<div class="center-form">
+    <form class="row g-4" style="justify-content: center; display: flex;">
+        <div class="col-md-4">
+          <label for="validationDefault01" class="form-label">First name</label>
+          <input type="text" class="form-control" id="validationDefault01" value="" required>
+        </div>
+        <div class="col-md-4">
+          <label for="validationDefault02" class="form-label">Last name</label>
+          <input type="text" class="form-control" id="validationDefault02" value="" required>
+        </div>
+        <div class="col-md-4">
+          <label for="validationDefaultUsername" class="form-label">Username</label>
+          <div class="input-group">
+            <span class="input-group-text" id="inputGroupPrepend2">@</span>
+            <input type="text" class="form-control" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" required>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <label for="validationDefault03" class="form-label">City</label>
+          <input type="text" class="form-control" id="validationDefault03" required>
+        </div>
+        <div class="col-md-3">
+          <label for="validationDefault04" class="form-label">State</label>
+          <select class="form-select" id="validationDefault04" required>
+            <option selected disabled value="">Choose...</option>
+            <option>Manila</option>
+            <option>Bulacan</option>
+            <option>Cavite</option>
+            <option>Laguna</option>
+            <option>Pampanga</option>
+            <option>Lucena</option>
+          </select>
+        </div>
+        <div class="col-md-3">
+          <label for="validationDefault05" class="form-label">Zip</label>
+          <input type="text" class="form-control" id="validationDefault05" required>
+        </div>
+        <div class="col-md-12">
+        <select class="form-select" aria-label="Default select example">
+            <option selected>Open this select menu</option>
+            <option value="1">(Pre-Sales) Request for Site Visit</option>
+            <option value="2">(Post-Sales) Request for Yearly Maintenance</option>
+            <option value="3">Warranty Check</option>
+            <option value="4">Partnership Inquiry</option>
+            <option value="5">Request for a Refund (Receipt Required)</option>
+          </select>
+        </div>
+          <div class="input-group">
+            <span class="input-group-text">Let us know what you think!</span>
+            <textarea class="form-control" aria-label="With textarea"></textarea>
+          </div>
+
+
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+            <label class="form-check-label" for="invalidCheck2">
+              Agree to terms and conditions
+            </label>
+          </div>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit" data-toggle="modal" data-target="#exampleModalCenter">Submit form</button>
+        </div>
+      </form>
+</div>
+
+<!------------------------------------- Modal ---------------------------------------->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Please fill out form.</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                    <div class="modal-body">
+                        Your data is safe with us, we only require an account for you to track your orders, requests, or any concern.
+                    </div>
+                                        
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Thanks!</button>
+                    <button type="button" class="btn btn-primary">Cool!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br><br>
+
+
+        <footer class="text-center">
+            <div class="container-fluid  text-white p-3" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; background: #323136;
+            background: linear-gradient(to right, #64604d, #867c5d, #c09c24);">
+         
+                 <div class="mt-3">
+                    <h3 class="text-center fw-bold">Want to Partner with us?</h3>
+                    <p class="text-center">Let us know how we can help!<br>
+                         Your business is our business and your happiness are ours too!</p>
+                    <center><a href="PlanB_ContactUs.html" class="btn btn-block btn-outline-light">Get Started</a></center>
+                     <hr>
+                 </div>
+         
+                 <div class="row justify-content-around text-center text-md-start">
+         
+                     <div class="col-md-2 text-center" id="FooterLogo">
+                         <img src="281544150_147679217823086_696519363242538715_n-removebg-preview.png" alt="">
+                         <h4>Eagles Solar Light</h4>
+                     </div>
+                     <div class="col-md-2">
+                         <ul class="list-unstyled">
+                             <li class="fw-bold my-2">Partnership</li>
+                             <li> <a href="PlanB_ContactUs.html" class="text-decoration-none text-white">Website</a> </li>
+                             <li> <a href="https://www.facebook.com/EaglesSolarLight/" class="text-decoration-none text-white"> Social Media</a></li>
+                         </ul>
+                     </div>
+                     <div class="col-md-2">
+                         <ul class="list-unstyled">
+                             <li class="fw-bold my-2">About</li>
+                             <li> <a href="index.html#about" class="text-decoration-none text-white">Who We Are</a> </li>
+                             <li> <a href="index.html#bottom" style="text-decoration: none; color: white;">FAQs </a></li>
+         
+                         </ul>
+                     </div>
+                     <div class="col-md-2">
+                         <ul class="list-unstyled">
+                             <li class="fw-bold my-2">Support</li>
+                             <li> <a href="PlanB_ContactUs.html" class="text-decoration-none text-white">Contact</a> </li>
+                             <li> <a href="PlanB_ContactUs.html" class="text-decoration-none text-white">Support Request</a> </li>
+                         </ul>
+                     </div>
+                     <div class="col-md-2">
+                         <li class="fw-bold my-2 list-unstyled">Follow us</li>
+                         <ul class="list-unstyled d-flex justify-content-center justify-content-md-start">
+                             <li><a href="https://www.facebook.com/EaglesSolarLight/" class="text-white"><i class="fa-brands fa-facebook me-2 fa-1x"></i></a></li>
+                             <li><a href="https://www.youtube.com/@EAGLESSOLARLIGHTCORPORATION" class="text-white"><i class="fa-brands fa-youtube mx-2 fa-1x"></i></a></li>
+                             <li><a href="https://www.instagram.com/eaglessolarlights/" class="text-white"><i class="fa-brands fa-instagram mx-2 fa-1x"></i></a></li>
+                         </ul>
+                     </div>
+                 </div>
+                 <hr>
+                 <div class="row">
+                     <div class="col-md-12 text-center pt-2">
+                         <p>&copy; 2023 Copyright | Eagles Solar Light</p>
+                     </div>
+                 </div>
+             </div>
+        </footer>
+
+
+
+
+  
+    
+    <script>
+    document.addEventListener('scroll', () => {
+    const main=document.querySelector('.navbar');
+    if (window.scrollY > 56) {
+        main.classList.add('navbar-scrolled');
+    } else if (window.scrollY < 56) {
+        main.classList.remove('navbar-scrolled')
+    }
+    });
+    
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+
+    hamburger.addEventListener("click", mobileMenu);
+
+    function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+    }
+
+    </script>
+    <!-- SWIPER JS-->
+
+
+
+    <script src="https://unpkg.com/swiper@10.3.1/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    
+</body>
+</html>
